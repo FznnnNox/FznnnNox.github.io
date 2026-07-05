@@ -1,25 +1,17 @@
 import React from "react";
 
-/* ============================= */
-/* ========= DUMMY DATA ======== */
-/* ============================= */
-
 const educationData = [
   {
     school: "SMKN 7 Kota Serang",
     major: "Rekayasa Perangkat Lunak",
     period: "2022 - 2025",
     achievements: [
+      "1st Place | Web Programming 2026 – Kota Serang",
       "1st Place | Web Programming 2025 – Kota Serang",
       "2nd Place (Men's Singles) | Kota Serang Badminton Championship 2019",
     ],
   },
-  // Kamu bisa tambah data baru di sini nanti
 ];
-
-/* ============================= */
-/* ========= COMPONENT ========= */
-/* ============================= */
 
 const Education = () => {
   // Bisa diubah jumlahnya kalau mau tampil sebagian
