@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
 
-// Import Assets
 import p01 from "../assets/p-01.png";
-import p02 from "../assets/p-02.png";
 import p03 from "../assets/p-03.png";
 import p04 from "../assets/p-04.png";
 import p05 from "../assets/p-05.png";
@@ -247,7 +245,7 @@ const Project = () => {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-1 text-[9px] uppercase tracking-tighter font-black rounded bg-gray-100 dark:bg-[#262626] text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700"
+                        className="px-2 py-1 text-[9px] uppercase tracking-tighter font-normal rounded bg-gray-100 dark:bg-[#262626] text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700"
                       >
                         {tag}
                       </span>

@@ -1,4 +1,5 @@
 import React from "react";
+import { GraduationCap, Code2, Bike, Gamepad2 } from "lucide-react";
 
 const About = () => {
   return (
@@ -86,10 +87,22 @@ const About = () => {
               </h3>
 
               <ul className="space-y-3 text-gray-600 dark:text-gray-400">
-                <li>🎓 12th Grade Student</li>
-                <li>💻 Passionate in Web Development</li>
-                <li>🚴 Loves Cycling</li>
-                <li>🎮 Gamer & Pet Enthusiast</li>
+                <li className="flex items-center gap-2.5">
+                  <GraduationCap className="w-4 h-4 shrink-0 text-gray-400 dark:text-gray-500" />
+                  12th Grade Student
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <Code2 className="w-4 h-4 shrink-0 text-gray-400 dark:text-gray-500" />
+                  Passionate in Web Development
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <Bike className="w-4 h-4 shrink-0 text-gray-400 dark:text-gray-500" />
+                  Loves Cycling
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <Gamepad2 className="w-4 h-4 shrink-0 text-gray-400 dark:text-gray-500" />
+                  Gamer & Pet Enthusiast
+                </li>
               </ul>
             </div>
           </div>
