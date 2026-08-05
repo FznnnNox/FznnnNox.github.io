@@ -403,7 +403,22 @@ const Project = () => {
     { name: "CSS", slug: "css", icon: "ri-css3-fill" },
     { name: "Javascript", slug: "javascript", icon: "ri-javascript-fill" },
     { name: "React", slug: "react", icon: "ri-reactjs-fill" },
+    { name: "Next.js", slug: "nextjs", icon: "ri-nextjs-fill" },
+    { name: "Supabase", slug: "supabase", icon: "ri-supabase-fill" },
     { name: "Laravel", slug: "laravel", icon: "fa-brands fa-laravel" },
+    {
+    name: "Figma",
+    slug: "figma",
+    icon: (
+      <svg
+        className="w-4 h-4 fill-current inline-block"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 12A3 3 0 0 0 15 9A3 3 0 0 0 12 6A3 3 0 0 0 9 9A3 3 0 0 0 12 12M6 15A3 3 0 0 0 9 18A3 3 0 0 0 12 15A3 3 0 0 0 9 12A3 3 0 0 0 6 15M6 9A3 3 0 0 0 9 12A3 3 0 0 0 12 9A3 3 0 0 0 9 6A3 3 0 0 0 6 9M15 15A3 3 0 0 0 18 12A3 3 0 0 0 15 9A3 3 0 0 0 12 12A3 3 0 0 0 15 15M9 21A3 3 0 0 0 12 18V15H9A3 3 0 0 0 6 18A3 3 0 0 0 9 21Z" />
+      </svg>
+    ),
+  },
     {
       name: "Filament",
       slug: "filament",
