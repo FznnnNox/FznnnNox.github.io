@@ -43,13 +43,13 @@ const Hero = () => {
       </div>
 
       {/* 2. Foto Profil Overlay */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-[95px] sm:top-[140px] md:top-[170px] lg:top-[220px] pointer-events-none z-10 flex justify-center items-center w-full px-4">
-        <img
-          src={PasFoto}
-          alt="Ahmad Fauzan"
-          className="h-auto max-h-[200px] sm:max-h-[320px] md:max-h-[400px] lg:max-h-[400px] w-auto object-contain grayscale contrast-125 drop-shadow-2xl"
-        />
-      </div>
+<div className="absolute left-1/2 -translate-x-1/2 top-[120px] sm:top-[150px] md:top-[170px] lg:top-[220px] pointer-events-none z-10 flex justify-center items-center w-full px-4">
+  <img
+    src={PasFoto}
+    alt="Ahmad Fauzan"
+    className="h-auto max-h-[220px] sm:max-h-[320px] md:max-h-[400px] lg:max-h-[400px] w-auto object-contain grayscale contrast-125 drop-shadow-2xl"
+  />
+</div>
 
       {/* 3. Grid Content Bagian Bawah */}
       <div className="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-end mt-12 md:mt-0 mb-4">
