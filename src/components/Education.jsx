@@ -6,7 +6,7 @@ const educationData = [
   {
     school: "Universitas Pamulang",
     logo: logoUnpam,
-    major: "System Information", 
+    major: "System Information",
     period: "2025 - Present",
     achievements: [
       // isi pencapaian/organisasi/nilai kalau ada
@@ -55,18 +55,17 @@ const Education = () => {
             {visibleEducation.map((edu, index) => (
               <div key={index} className="relative flex gap-5 sm:gap-6">
 
-                {/* Logo node */}
+                {/* Logo node - Tambahkan bg-white permanen agar gambar transparan tetap kontras */}
                 <div className="relative z-10 shrink-0">
                   <div
                     className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl overflow-hidden
-                               bg-white dark:bg-[#1a1a1a]
-                               border border-gray-200 dark:border-gray-700
-                               shadow-sm flex items-center justify-center"
+                     bg-white shadow-sm border border-gray-200 dark:border-gray-700
+                     flex items-center justify-center p-2"
                   >
                     <img
                       src={edu.logo}
                       alt={`${edu.school} logo`}
-                      className="max-w-full max-h-full w-auto h-auto object-contain p-2"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </div>
@@ -74,9 +73,9 @@ const Education = () => {
                 {/* Card */}
                 <div
                   className="group flex-1 p-5 sm:p-6 rounded-2xl bg-white border border-gray-200
-                             dark:bg-[#1a1a1a] dark:border-gray-800
-                             transition-all duration-300
-                             hover:shadow-lg hover:-translate-y-1 hover:border-gray-300 dark:hover:border-gray-700"
+                   dark:bg-[#1a1a1a] dark:border-gray-800
+                   transition-all duration-300
+                   hover:shadow-lg hover:-translate-y-1 hover:border-gray-300 dark:hover:border-gray-700"
                 >
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-1">
                     <h3 className="font-semibold text-gray-900 dark:text-white">
@@ -91,7 +90,7 @@ const Education = () => {
                     {edu.major}
                   </p>
 
-                  {edu.achievements.length > 0 && (
+                  {edu.achievements && edu.achievements.length > 0 && (
                     <>
                       <h4 className="text-gray-900 dark:text-white font-medium mb-2 text-sm">
                         Key Achievements

@@ -58,18 +58,17 @@ const WorkExperience = () => {
             {workData.map((item, index) => (
               <div key={index} className="relative flex gap-5 sm:gap-6">
 
-                {/* Logo node */}
+                {/* Logo node - Menggunakan container putih netral agar logo transparan selalu terlihat jelas */}
                 <div className="relative z-10 shrink-0">
                   <div
                     className="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl overflow-hidden
-                               bg-white dark:bg-[#1a1a1a]
-                               border border-gray-200 dark:border-gray-700
-                               shadow-sm flex items-center justify-center"
+                     bg-white shadow-sm border border-gray-200 dark:border-gray-700
+                     flex items-center justify-center p-2.5"
                   >
                     <img
                       src={item.logo}
                       alt={`${item.company} logo`}
-                      className="max-w-full max-h-full w-auto h-auto object-contain p-2"
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </div>
@@ -77,9 +76,9 @@ const WorkExperience = () => {
                 {/* Card */}
                 <div
                   className="group flex-1 p-5 sm:p-6 rounded-2xl bg-white border border-gray-200
-                             dark:bg-[#1a1a1a] dark:border-gray-800
-                             transition-all duration-300
-                             hover:shadow-lg hover:-translate-y-1 hover:border-gray-300 dark:hover:border-gray-700"
+                   dark:bg-[#1a1a1a] dark:border-gray-800
+                   transition-all duration-300
+                   hover:shadow-lg hover:-translate-y-1 hover:border-gray-300 dark:hover:border-gray-700"
                 >
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-1">
                     <h3 className="font-semibold text-gray-900 dark:text-white">
@@ -94,21 +93,23 @@ const WorkExperience = () => {
                     {item.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 text-xs">
-                    {item.skills.map((skill, i) => (
-                      <span
-                        key={i}
-                        className="px-2.5 py-1 rounded-md bg-gray-100
-                                   dark:bg-gray-800
-                                   text-gray-800 dark:text-gray-200
-                                   transition duration-200
-                                   group-hover:bg-gray-200
-                                   dark:group-hover:bg-gray-700"
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                  {item.skills && item.skills.length > 0 && (
+                    <div className="flex flex-wrap gap-2 text-xs">
+                      {item.skills.map((skill, i) => (
+                        <span
+                          key={i}
+                          className="px-2.5 py-1 rounded-md bg-gray-100
+                           dark:bg-gray-800
+                           text-gray-800 dark:text-gray-200
+                           transition duration-200
+                           group-hover:bg-gray-200
+                           dark:group-hover:bg-gray-700"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
