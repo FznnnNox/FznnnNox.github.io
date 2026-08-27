@@ -7,7 +7,7 @@ const educationData = [
     school: "Universitas Pamulang",
     logo: logoUnpam,
     major: "System Information",
-    period: "2025 - Present",
+    period: "2026 - Present",
     achievements: [
       // isi pencapaian/organisasi/nilai kalau ada
     ],
