@@ -2,14 +2,14 @@
 // import Footer from "../components/Footer";
 
 // import p01 from "../assets/p-01.png";
-// import p03 from "../assets/p-03.png";
+// import p03 from "../assets/web-majelis.png";
 // import p04 from "../assets/p-04.png";
 // import p05 from "../assets/p-05.png";
 // import p06 from "../assets/p-06.png";
 // import p10 from "../assets/p-10.png";
 // import p11 from "../assets/p-11.png";
-// import p12 from "../assets/p-12.png";
-// import p13 from "../assets/p-13.png";
+// import p12 from "../assets/web-lomba.png";
+// import p13 from "../assets/web-nazu.png";
 
 // const Project = () => {
 //   const [filter, setFilter] = useState("all");
@@ -18,7 +18,7 @@
 //     {
 //       id: 1,
 //       title: "E-Market Vegetables",
-//       desc: "Market Vegetables menyediakan berbagai pilihan sayuran dan buah segar dengan tampilan menarik.",
+//       desc: "Platform toko online sayur dan buah segar yang memudahkan konsumen memilih produk berkualitas tinggi dengan katalog interaktif dan antarmuka yang bersih.",
 //       tags: ["html", "css", "javascript"],
 //       img: p01,
 //       live: "#",
@@ -26,9 +26,9 @@
 //     },
 //     {
 //       id: 2,
-//       title: "SnapBook",
-//       desc: "Buku Tamu digital ini memudahkan proses pencatatan dan meningkatkan keamanan data kunjungan.",
-//       tags: ["laravel", "tailwind", "javascript", "mysql"],
+//       title: "Website Majelis",
+//       desc: "Platform manajemen majelis terpadu yang memfasilitasi pencatatan jadwal hafalan murid, informasi jadwal sholat digital, serta sistem penggalangan dan transparansi donasi jamaah.",
+//       tags: ["nextjs", "tailwind", "supabase"],
 //       img: p03,
 //       live: "#",
 //       code: "#",
@@ -36,7 +36,7 @@
 //     {
 //       id: 3,
 //       title: "AdoptMe",
-//       desc: "Adopt Pet adalah platform adopsi hewan peliharaan yang mempertemukan kucing dan anjing lucu.",
+//       desc: "Platform adopsi hewan peliharaan interaktif yang menghubungkan calon pemilik dengan hewan terlantar seperti kucing dan anjing melalui direktori profil hewan.",
 //       tags: ["html", "css", "javascript"],
 //       img: p04,
 //       live: "#",
@@ -45,7 +45,7 @@
 //     {
 //       id: 4,
 //       title: "ZannPlant",
-//       desc: "GreenStore adalah toko tanaman online yang menyediakan berbagai macam tanaman hias.",
+//       desc: "Website toko tanaman hias online (GreenStore) yang menyajikan katalog koleksi tanaman lengkap, panduan perawatan, dan navigasi pemesanan yang responsif.",
 //       tags: ["laravel", "css", "javascript", "mysql"],
 //       img: p05,
 //       live: "#",
@@ -53,9 +53,9 @@
 //     },
 //     {
 //       id: 5,
-//       title: "AuraNet",
-//       desc: "Login Voucher",
-//       tags: ["html", "css", "javascript"],
+//       title: "Wengzxmerce",
+//       desc: "Website toko online eksklusif/single-vendor untuk memasarkan dan mengelola penjualan produk milik pribadi secara mandiri dengan antarmuka yang modern dan responsif.",
+//       tags: ["laravel", "tailwind", "mysql"],
 //       img: p13,
 //       live: "#",
 //       code: "#",
@@ -63,7 +63,7 @@
 //     {
 //       id: 6,
 //       title: "ArepLungeu",
-//       desc: "Aplikasi untuk membuat surat perjalanan dinas yang termonitoring.",
+//       desc: "Sistem informasi manajemen surat perjalanan dinas (SPPD) untuk pembuatan, pengarsipan, dan pemantauan status persetujuan dokumen dinas secara terpusat.",
 //       tags: ["laravel", "bootstrap", "mysql"],
 //       img: p06,
 //       live: "#",
@@ -71,8 +71,8 @@
 //     },
 //     {
 //       id: 7,
-//       title: "Todo List",
-//       desc: "Aplikasi produktivitas untuk mengelola tugas harian, mengatur prioritas, dan memantau progres aktivitas secara efisien.",
+//       title: "Web Lomba 17 Agustus",
+//       desc: "Aplikasi web interaktif untuk menyemarakkan kegiatan perayaan HUT RI, dilengkapi dengan informasi jadwal perlombaan, pendaftaran peserta online, bagan kompetisi, hingga pengumuman pemenang secara real-time.",
 //       tags: ["react", "tailwind"],
 //       img: p12,
 //       live: "#",
@@ -81,7 +81,7 @@
 //     {
 //       id: 8,
 //       title: "Website Fakultas",
-//       desc: "Pusat informasi akademik terintegrasi yang menyajikan profil fakultas, berita kampus, dan layanan mahasiswa dengan antarmuka modern.",
+//       desc: "Pusat informasi akademik terintegrasi yang menyajikan profil fakultas, portal berita kampus, program studi, dan layanan mahasiswa dengan dasbor Filament Admin.",
 //       tags: ["react", "tailwind", "mysql", "filament", "laravel"],
 //       img: p10,
 //       live: "#",
@@ -90,7 +90,7 @@
 //     {
 //       id: 9,
 //       title: "ParkFlow",
-//       desc: "Website sistem parkir",
+//       desc: "Sistem manajemen parkir cerdas berbasis web untuk mencatat alur keluar-masuk kendaraan, pemindaian tiket, pemantauan slot parkir, dan rekapitulasi data petugas.",
 //       tags: ["laravel", "filament", "tailwind", "javascript", "mysql"],
 //       img: p11,
 //       live: "#",
@@ -104,7 +104,22 @@
 //     { name: "CSS", slug: "css", icon: "ri-css3-fill" },
 //     { name: "Javascript", slug: "javascript", icon: "ri-javascript-fill" },
 //     { name: "React", slug: "react", icon: "ri-reactjs-fill" },
+//     { name: "Next.js", slug: "nextjs", icon: "ri-nextjs-fill" },
+//     { name: "Supabase", slug: "supabase", icon: "ri-supabase-fill" },
 //     { name: "Laravel", slug: "laravel", icon: "fa-brands fa-laravel" },
+//     {
+//     name: "Figma",
+//     slug: "figma",
+//     icon: (
+//       <svg
+//         className="w-4 h-4 fill-current inline-block"
+//         viewBox="0 0 24 24"
+//         xmlns="http://www.w3.org/2000/svg"
+//       >
+//         <path d="M12 12A3 3 0 0 0 15 9A3 3 0 0 0 12 6A3 3 0 0 0 9 9A3 3 0 0 0 12 12M6 15A3 3 0 0 0 9 18A3 3 0 0 0 12 15A3 3 0 0 0 9 12A3 3 0 0 0 6 15M6 9A3 3 0 0 0 9 12A3 3 0 0 0 12 9A3 3 0 0 0 9 6A3 3 0 0 0 6 9M15 15A3 3 0 0 0 18 12A3 3 0 0 0 15 9A3 3 0 0 0 12 12A3 3 0 0 0 15 15M9 21A3 3 0 0 0 12 18V15H9A3 3 0 0 0 6 18A3 3 0 0 0 9 21Z" />
+//       </svg>
+//     ),
+//   },
 //     {
 //       name: "Filament",
 //       slug: "filament",
@@ -142,9 +157,9 @@
 //           width: 50%;
 //           height: 100%;
 //           background: linear-gradient(
-//             120deg, 
-//             transparent, 
-//             rgba(255, 255, 255, 0.3), 
+//             120deg,
+//             transparent,
+//             rgba(255, 255, 255, 0.3),
 //             transparent
 //           );
 //           transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -166,16 +181,17 @@
 //         </p>
 
 //         {/* Filter Buttons */}
-//         <div className="mt-10 max-w-5xl mx-auto">
+//         <div className="mt-10 max-w-4xl mx-auto">
 //           <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
 //             {filterButtons.map((btn) => (
 //               <button
 //                 key={btn.slug}
 //                 onClick={() => setFilter(btn.slug)}
-//                 className={`flex items-center gap-2 px-4 py-2 text-xs sm:text-sm font-medium rounded-full transition-all duration-300 border
-//                   ${filter === btn.slug
-//                     ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-md"
-//                     : "bg-transparent border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 hover:border-gray-400 dark:hover:border-gray-500"
+//                 className={`flex items-center gap-2 px-3.5 py-1.5 text-xs font-medium rounded-full transition-all duration-300 border
+//                   ${
+//                     filter === btn.slug
+//                       ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-md"
+//                       : "bg-transparent border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 hover:border-gray-400 dark:hover:border-gray-500"
 //                   }`}
 //               >
 //                 {typeof btn.icon === "string" ? (
@@ -192,11 +208,12 @@
 
 //       {/* Projects Grid */}
 //       <section className="px-4 sm:px-6 pb-20">
-//         <div className="max-w-5xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+//         {/* Diubah menjadi 3 kolom di layar sedang/besar (md:grid-cols-3) dan max-w-6xl */}
+//         <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-3">
 //           {filteredProjects.map((project) => (
 //             <div
 //               key={project.id}
-//               className="group relative bg-white dark:bg-[#1c1c1c] border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden transition-all duration-500"
+//               className="group relative bg-white dark:bg-[#1c1c1c] border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden transition-all duration-500 hover:border-gray-400 dark:hover:border-gray-700"
 //             >
 //               <div className="full-slash h-full w-full flex flex-col">
 //                 {/* Image Container */}
@@ -204,16 +221,16 @@
 //                   <img
 //                     src={project.img}
 //                     alt={project.title}
-//                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+//                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
 //                   />
 
 //                   {/* Hover Overlay */}
-//                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-[2px] bg-black/40 flex items-center justify-center gap-4 z-20">
+//                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-[2px] bg-black/40 flex items-center justify-center gap-3 z-20">
 //                     <a
 //                       href={project.live}
 //                       target="_blank"
 //                       rel="noopener noreferrer"
-//                       className="bg-white text-black px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2 hover:bg-gray-200 transition-colors"
+//                       className="bg-white text-black px-3 py-1.5 rounded-md text-[11px] font-bold flex items-center gap-1.5 hover:bg-gray-200 transition-colors"
 //                     >
 //                       <i className="ri-external-link-line"></i> LIVE
 //                     </a>
@@ -221,27 +238,27 @@
 //                       href={project.code}
 //                       target="_blank"
 //                       rel="noopener noreferrer"
-//                       className="bg-transparent text-white border border-white/50 px-4 py-2 rounded-lg text-xs font-bold flex items-center gap-2 hover:bg-white/10 transition-colors"
+//                       className="bg-transparent text-white border border-white/50 px-3 py-1.5 rounded-md text-[11px] font-bold flex items-center gap-1.5 hover:bg-white/10 transition-colors"
 //                     >
 //                       <i className="ri-github-line"></i> CODE
 //                     </a>
 //                   </div>
 //                 </div>
 
-//                 {/* Content Section */}
-//                 <div className="p-5 flex-grow flex flex-col">
-//                   <h3 className="font-semibold text-lg mb-2 transition-colors">
+//                 {/* Content Section dengan padding lebih kecil (p-4) & ukuran font ringkas (text-xs) */}
+//                 <div className="p-4 flex-grow flex flex-col">
+//                   <h3 className="font-semibold text-base mb-1.5 transition-colors">
 //                     {project.title}
 //                   </h3>
-//                   <p className="text-gray-500 dark:text-gray-400 text-sm line-clamp-2 mb-4">
+//                   <p className="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4">
 //                     {project.desc}
 //                   </p>
 
-//                   <div className="mt-auto flex flex-wrap gap-2">
+//                   <div className="mt-auto flex flex-wrap gap-1.5 pt-2">
 //                     {project.tags.map((tag) => (
 //                       <span
 //                         key={tag}
-//                         className="px-2 py-1 text-[9px] uppercase tracking-tighter font-bold rounded-xl bg-gray-300 dark:bg-[#262626] text-gray-800 dark:text-gray-400 border border-gray-200 dark:border-gray-700"
+//                         className="px-2 py-0.5 text-[9px] uppercase tracking-tighter font-bold rounded-lg bg-gray-100 dark:bg-[#262626] text-gray-700 dark:text-gray-400 border border-gray-200 dark:border-gray-700/60"
 //                       >
 //                         {tag}
 //                       </span>
@@ -268,7 +285,6 @@
 //       <section className="px-4 sm:px-6 pb-24">
 //         <div className="max-w-6xl mx-auto">
 //           <div className="border-t border-gray-200 dark:border-gray-800 pt-16 text-left">
-
 //             <p className="text-gray-400 text-sm mb-3 tracking-wide">
 //               want to see more?
 //             </p>
@@ -284,7 +300,6 @@
 //                 →
 //               </span>
 //             </a>
-
 //           </div>
 //         </div>
 //       </section>
@@ -301,14 +316,14 @@ import React, { useState } from "react";
 import Footer from "../components/Footer";
 
 import p01 from "../assets/p-01.png";
-import p03 from "../assets/p-03.png";
+import p03 from "../assets/web-majelis.png";
 import p04 from "../assets/p-04.png";
 import p05 from "../assets/p-05.png";
 import p06 from "../assets/p-06.png";
 import p10 from "../assets/p-10.png";
 import p11 from "../assets/p-11.png";
-import p12 from "../assets/p-12.png";
-import p13 from "../assets/p-13.png";
+import p12 from "../assets/web-lomba.png";
+import p13 from "../assets/web-nazu.png";
 
 const Project = () => {
   const [filter, setFilter] = useState("all");
@@ -316,84 +331,84 @@ const Project = () => {
   const projectsData = [
     {
       id: 1,
-      title: "E-Market Vegetables",
-      desc: "Platform toko online sayur dan buah segar yang memudahkan konsumen memilih produk berkualitas tinggi dengan katalog interaktif dan antarmuka yang bersih.",
-      tags: ["html", "css", "javascript"],
-      img: p01,
+      title: "Website Majelis",
+      desc: "Platform manajemen majelis terpadu yang memfasilitasi pencatatan jadwal hafalan murid, informasi jadwal sholat digital, serta sistem penggalangan dan transparansi donasi jamaah.",
+      tags: ["nextjs", "tailwind", "supabase"],
+      img: p03,
       live: "#",
-      code: "#",
+      code: "https://github.com/FznnnNox/majelis-web",
     },
     {
       id: 2,
-      title: "SnapBook",
-      desc: "Sistem buku tamu digital berbasis web untuk mencatat data pengunjung secara efisien, terstruktur, serta dilengkapi dengan manajemen direktori data kunjungan.",
-      tags: ["laravel", "tailwind", "javascript", "mysql"],
-      img: p03,
-      live: "#",
-      code: "#",
-    },
-    {
-      id: 3,
-      title: "AdoptMe",
-      desc: "Platform adopsi hewan peliharaan interaktif yang menghubungkan calon pemilik dengan hewan terlantar seperti kucing dan anjing melalui direktori profil hewan.",
-      tags: ["html", "css", "javascript"],
-      img: p04,
-      live: "#",
-      code: "#",
-    },
-    {
-      id: 4,
-      title: "ZannPlant",
-      desc: "Website toko tanaman hias online (GreenStore) yang menyajikan katalog koleksi tanaman lengkap, panduan perawatan, dan navigasi pemesanan yang responsif.",
-      tags: ["laravel", "css", "javascript", "mysql"],
-      img: p05,
-      live: "#",
-      code: "#",
-    },
-    {
-      id: 5,
-      title: "AuraNet",
-      desc: "Halaman captive portal login voucher Wi-Fi interaktif untuk manajemen autentikasi akses internet pengguna secara dinamis dan aman.",
-      tags: ["html", "css", "javascript"],
-      img: p13,
-      live: "#",
-      code: "#",
-    },
-    {
-      id: 6,
-      title: "ArepLungeu",
-      desc: "Sistem informasi manajemen surat perjalanan dinas (SPPD) untuk pembuatan, pengarsipan, dan pemantauan status persetujuan dokumen dinas secara terpusat.",
-      tags: ["laravel", "bootstrap", "mysql"],
-      img: p06,
-      live: "#",
-      code: "#",
-    },
-    {
-      id: 7,
-      title: "Todo List",
-      desc: "Aplikasi produktivitas berbasis React untuk mengelola tugas harian, mengatur tingkat prioritas, serta memantau status penyelesaian aktivitas secara interaktif.",
+      title: "Web Lomba 17 Agustus",
+      desc: "Aplikasi web interaktif untuk menyemarakkan kegiatan perayaan HUT RI, dilengkapi dengan informasi jadwal perlombaan, pendaftaran peserta online, bagan kompetisi, hingga pengumuman pemenang secara real-time.",
       tags: ["react", "tailwind"],
       img: p12,
       live: "#",
-      code: "#",
+      code: "https://github.com/FznnnNox/web-17an",
     },
     {
-      id: 8,
+      id: 3,
+      title: "Wengzxmerce",
+      desc: "Website toko online eksklusif/single-vendor untuk memasarkan dan mengelola penjualan produk milik pribadi secara mandiri dengan antarmuka yang modern dan responsif.",
+      tags: ["laravel", "tailwind", "mysql"],
+      img: p13,
+      live: "#",
+      code: "https://github.com/FznnnNox/ecommerce-web",
+    },
+    {
+      id: 4,
       title: "Website Fakultas",
       desc: "Pusat informasi akademik terintegrasi yang menyajikan profil fakultas, portal berita kampus, program studi, dan layanan mahasiswa dengan dasbor Filament Admin.",
       tags: ["react", "tailwind", "mysql", "filament", "laravel"],
       img: p10,
-      live: "#",
-      code: "#",
+      live: "https://fkipunbaja.vercel.app",
+      code: "https://github.com/FznnnNox/fkip-react",
     },
     {
-      id: 9,
+      id: 5,
+      title: "ArepLungeu",
+      desc: "Sistem informasi manajemen surat perjalanan dinas (SPPD) untuk pembuatan, pengarsipan, dan pemantauan status persetujuan dokumen dinas secara terpusat.",
+      tags: ["laravel", "bootstrap", "mysql"],
+      img: p06,
+      live: "https://github.com/FznnnNox",
+      code: "https://github.com/FznnnNox",
+    },
+    {
+      id: 6,
+      title: "ZannPlant",
+      desc: "Website toko tanaman hias online (GreenStore) yang menyajikan katalog koleksi tanaman lengkap, panduan perawatan, dan navigasi pemesanan yang responsif.",
+      tags: ["laravel", "css", "javascript", "mysql"],
+      img: p05,
+      live: "https://github.com/FznnnNox/",
+      code: "https://github.com/FznnnNox",
+    },
+    {
+      id: 7,
       title: "ParkFlow",
       desc: "Sistem manajemen parkir cerdas berbasis web untuk mencatat alur keluar-masuk kendaraan, pemindaian tiket, pemantauan slot parkir, dan rekapitulasi data petugas.",
       tags: ["laravel", "filament", "tailwind", "javascript", "mysql"],
       img: p11,
-      live: "#",
-      code: "#",
+      live: "https://github.com/FznnnNox",
+      code: "https://github.com/FznnnNox",
+    },
+    {
+      id: 8,
+      title: "E-Market Vegetables",
+      desc: "Platform toko online sayur dan buah segar yang memudahkan konsumen memilih produk berkualitas tinggi dengan katalog interaktif dan antarmuka yang bersih.",
+      tags: ["html", "css", "javascript"],
+      img: p01,
+      live: "https://github.com/FznnnNox",
+      code: "https://github.com/FznnnNox/vegetables",
+    },
+    {
+      id: 9,
+      title: "AdoptMe",
+      desc: "Platform adopsi hewan peliharaan interaktif yang menghubungkan calon pemilik dengan hewan terlantar seperti kucing dan anjing melalui direktori profil hewan.",
+      tags: ["html", "css", "javascript"],
+      img: p04,
+      live: "https://github.com/FznnnNox",
+      code: "https://github.com/FznnnNox/adopt-pet",
     },
   ];
 
@@ -407,18 +422,18 @@ const Project = () => {
     { name: "Supabase", slug: "supabase", icon: "ri-supabase-fill" },
     { name: "Laravel", slug: "laravel", icon: "fa-brands fa-laravel" },
     {
-    name: "Figma",
-    slug: "figma",
-    icon: (
-      <svg
-        className="w-4 h-4 fill-current inline-block"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M12 12A3 3 0 0 0 15 9A3 3 0 0 0 12 6A3 3 0 0 0 9 9A3 3 0 0 0 12 12M6 15A3 3 0 0 0 9 18A3 3 0 0 0 12 15A3 3 0 0 0 9 12A3 3 0 0 0 6 15M6 9A3 3 0 0 0 9 12A3 3 0 0 0 12 9A3 3 0 0 0 9 6A3 3 0 0 0 6 9M15 15A3 3 0 0 0 18 12A3 3 0 0 0 15 9A3 3 0 0 0 12 12A3 3 0 0 0 15 15M9 21A3 3 0 0 0 12 18V15H9A3 3 0 0 0 6 18A3 3 0 0 0 9 21Z" />
-      </svg>
-    ),
-  },
+      name: "Figma",
+      slug: "figma",
+      icon: (
+        <svg
+          className="w-4 h-4 fill-current inline-block"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 12A3 3 0 0 0 15 9A3 3 0 0 0 12 6A3 3 0 0 0 9 9A3 3 0 0 0 12 12M6 15A3 3 0 0 0 9 18A3 3 0 0 0 12 15A3 3 0 0 0 9 12A3 3 0 0 0 6 15M6 9A3 3 0 0 0 9 12A3 3 0 0 0 12 9A3 3 0 0 0 9 6A3 3 0 0 0 6 9M15 15A3 3 0 0 0 18 12A3 3 0 0 0 15 9A3 3 0 0 0 12 12A3 3 0 0 0 15 15M9 21A3 3 0 0 0 12 18V15H9A3 3 0 0 0 6 18A3 3 0 0 0 9 21Z" />
+        </svg>
+      ),
+    },
     {
       name: "Filament",
       slug: "filament",
@@ -434,12 +449,11 @@ const Project = () => {
     { name: "Bootstrap", slug: "bootstrap", icon: "ri-bootstrap-fill" },
   ];
 
-  const sortedData = [...projectsData].sort((a, b) => b.id - a.id);
-
+  // Menggunakan data langsung tanpa pengurutan ulang
   const filteredProjects =
     filter === "all"
-      ? sortedData
-      : sortedData.filter((p) => p.tags.includes(filter));
+      ? projectsData
+      : projectsData.filter((p) => p.tags.includes(filter));
 
   return (
     <div className="bg-white text-black dark:bg-[#141414] dark:text-white min-h-screen transition-colors duration-300">
@@ -507,7 +521,6 @@ const Project = () => {
 
       {/* Projects Grid */}
       <section className="px-4 sm:px-6 pb-20">
-        {/* Diubah menjadi 3 kolom di layar sedang/besar (md:grid-cols-3) dan max-w-6xl */}
         <div className="max-w-6xl mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {filteredProjects.map((project) => (
             <div
@@ -524,27 +537,37 @@ const Project = () => {
                   />
 
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-[2px] bg-black/40 flex items-center justify-center gap-3 z-20">
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white text-black px-3 py-1.5 rounded-md text-[11px] font-bold flex items-center gap-1.5 hover:bg-gray-200 transition-colors"
-                    >
-                      <i className="ri-external-link-line"></i> LIVE
-                    </a>
-                    <a
-                      href={project.code}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-transparent text-white border border-white/50 px-3 py-1.5 rounded-md text-[11px] font-bold flex items-center gap-1.5 hover:bg-white/10 transition-colors"
-                    >
-                      <i className="ri-github-line"></i> CODE
-                    </a>
-                  </div>
+                 {/* Hover Overlay */}
+<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-[2px] bg-black/40 flex items-center justify-center gap-3 z-20">
+  
+  {/* Tombol LIVE hanya tampil jika project.live ada isinya */}
+  {project.live && project.live !== "#" && (
+    <a
+      href={project.live}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white text-black px-3 py-1.5 rounded-md text-[11px] font-bold flex items-center gap-1.5 hover:bg-gray-200 transition-colors"
+    >
+      <i className="ri-external-link-line"></i> LIVE
+    </a>
+  )}
+
+  {/* Tombol CODE tetap selalu tampil */}
+  {project.code && project.code !== "#" && (
+    <a
+      href={project.code}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-transparent text-white border border-white/50 px-3 py-1.5 rounded-md text-[11px] font-bold flex items-center gap-1.5 hover:bg-white/10 transition-colors"
+    >
+      <i className="ri-github-line"></i> CODE
+    </a>
+  )}
+
+</div>
                 </div>
 
-                {/* Content Section dengan padding lebih kecil (p-4) & ukuran font ringkas (text-xs) */}
+                {/* Content Section */}
                 <div className="p-4 flex-grow flex flex-col">
                   <h3 className="font-semibold text-base mb-1.5 transition-colors">
                     {project.title}
