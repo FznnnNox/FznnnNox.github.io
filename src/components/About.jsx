@@ -30,7 +30,7 @@ const About = () => {
           <div
             className="w-16 h-[3px] mt-4 
                           bg-gradient-to-r 
-                          from-purple-500 to-blue-500 
+                          bg-gray-800 
                           rounded-full"
           ></div>
         </div>
@@ -67,8 +67,7 @@ const About = () => {
           >
             <div
               className="absolute inset-0 
-                            bg-gradient-to-r 
-                            from-purple-500/20 to-blue-500/20 
+                            bg-gradient-to-r  
                             blur-xl rounded-2xl 
                             opacity-60 group-hover:opacity-80 
                             transition"

@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./App.css";
 
-// Dark mode follow system
 if (
   localStorage.getItem("theme") === "dark" ||
   (!localStorage.getItem("theme") &&

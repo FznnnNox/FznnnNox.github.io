@@ -7,12 +7,12 @@ const Hero = () => {
 
   useEffect(() => {
     const typed = new Typed(typedElement.current, {
-      strings: ["Software Engineer", "Full-Stack Developer", "Web Architect"],
+      strings: ["Full-Stack Web Developer"],
       typeSpeed: 60,
       backSpeed: 40,
       backDelay: 1800,
       loop: true,
-      showCursor: false,
+      showCursor: true,
     });
 
     return () => {
@@ -29,38 +29,40 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen pt-24 sm:pt-28 lg:pt-32 pb-12 px-4 sm:px-6 lg:px-12 bg-white dark:bg-[#141414] text-black dark:text-white flex flex-col justify-between overflow-hidden">
-      
       {/* 1. Teks Nama Raksasa (Background) */}
-      <div className="w--mt-2 sm:mt-0 lg:mt-2 text-center z-0">
-        <h1 className="text-[11vw] sm:text-[10vw] lg:text-[9.5vw] leading-none font-extrabold tracking-tighter uppercase select-none flex justify-center gap-2 sm:gap-3 w-full whitespace-nowrap">
-          <span className="[-webkit-text-fill-color:transparent] [-webkit-text-stroke:1px_#000] dark:[-webkit-text-stroke:1px_#fff]">
-            AHMAD
+      <div className="-mt-2 sm:mt-0 lg:mt-2 text-center z-0">
+        <h1 className="text-[11vw] sm:text-[10vw] lg:text-[9vw] leading-none font-extrabold tracking-tighter select-none flex justify-center gap-2 sm:gap-3 w-full whitespace-nowrap">
+          <span className="font-extrabold dark:text-white">
+            Ahmad
           </span>
-          <span className="text-black dark:text-white">
-            FAUZAN
-          </span>
+          <span className="font-extrabold dark:text-white">Fauzan</span>
         </h1>
       </div>
 
-      {/* 2. Foto Profil Overlay */}
-<div className="absolute left-1/2 -translate-x-1/2 top-[120px] sm:top-[150px] md:top-[170px] lg:top-[220px] pointer-events-none z-10 flex justify-center items-center w-full px-4">
-  <img
-    src={PasFoto}
-    alt="Ahmad Fauzan"
-    className="h-auto max-h-[220px] sm:max-h-[320px] md:max-h-[400px] lg:max-h-[400px] w-auto object-contain grayscale contrast-125 drop-shadow-2xl"
-  />
-</div>
+      {/* 2. Foto Profil Overlay + Soft Orange Shadow / Glow */}
+      <div className="absolute left-1/2 -translate-x-1/2 top-[120px] sm:top-[150px] md:top-[170px] lg:top-[220px] pointer-events-none z-10 flex justify-center items-center w-full px-4">
+        
+        {/* Soft Orange Glow/Shadow Effect */}
+        <div className="absolute w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] lg:w-[420px] lg:h-[420px] bg-orange-400/30 dark:bg-orange-500/20 rounded-full blur-3xl -z-10 transform translate-y-4"></div>
+
+        {/* Foto Profil */}
+        <img
+          src={PasFoto}
+          alt="Ahmad Fauzan"
+          className="h-auto max-h-[220px] sm:max-h-[320px] md:max-h-[400px] lg:max-h-[400px] w-auto object-contain grayscale contrast-125 drop-shadow-xl relative z-10"
+        />
+      </div>
 
       {/* 3. Grid Content Bagian Bawah */}
       <div className="relative z-20 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-end mt-12 md:mt-0 mb-4">
-        
         {/* Kiri: Bio & CTA */}
         <div className="space-y-3 sm:space-y-4 max-w-sm text-left">
           <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
             <span ref={typedElement}>Software Engineer</span>
           </h2>
           <p className="text-gray-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed">
-            Designing and building modern web applications that are clear, performant, and scale-focused.
+            Designing and building modern web applications that are clear,
+            performant, and scale-focused.
           </p>
           <a
             href="#contact"
@@ -83,7 +85,6 @@ const Hero = () => {
             </a>
           ))}
         </div>
-
       </div>
     </section>
   );
