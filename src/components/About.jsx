@@ -9,12 +9,6 @@ const About = () => {
                  bg-white dark:bg-[#141414] 
                  transition-colors duration-500 overflow-hidden"
     >
-      <div
-        className="absolute -top-40 -right-40 w-[400px] h-[400px] 
-                      bg-purple-500/10 dark:bg-purple-500/5 
-                      blur-[120px] rounded-full"
-      ></div>
-
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="mb-14" data-aos="fade-up">
           <h2
@@ -78,8 +72,7 @@ const About = () => {
                             bg-white/60 dark:bg-white/5 
                             backdrop-blur-xl 
                             border border-gray-200 
-                            dark:border-white/10 
-                            shadow-lg"
+                            dark:border-white/10"
             >
               <h3 className="text-xl font-semibold mb-4 text-black dark:text-white">
                 Quick Facts
