@@ -3,7 +3,6 @@ import Typed from "typed.js";
 import PasFoto from "../assets/uzan.png";
 import Optimus from "../assets/head-optimus.png";
 
-const REVEAL_RADIUS = 90; 
 const OPTIMUS_ZOOM = "50%"; 
 const OPTIMUS_FOCUS = "center 10%";
 
@@ -19,6 +18,20 @@ const Hero = () => {
   const photoRef = useRef(null);
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
+  const [revealRadius, setRevealRadius] = useState(90);
+
+  useEffect(() => {
+    const updateRadius = () => {
+      const w = window.innerWidth;
+      if (w < 640) setRevealRadius(40); // mobile
+      else if (w < 1024) setRevealRadius(65); // tablet
+      else setRevealRadius(90); // desktop
+    };
+
+    updateRadius();
+    window.addEventListener("resize", updateRadius);
+    return () => window.removeEventListener("resize", updateRadius);
+  }, []);
 
   useEffect(() => {
     const prefersReducedMotion = window.matchMedia(
@@ -63,8 +76,6 @@ const Hero = () => {
         </div>
 
         <div className="relative z-10 -mt-8 sm:-mt-12 md:-mt-16 lg:-mt-20">
-          {/* Bungkus foto: inline-block supaya ukurannya persis sebesar foto,
-              bukan melebar ke seluruh baris (penting untuk akurasi lingkaran hover). */}
           <div
             ref={photoRef}
             onMouseEnter={() => setIsHovering(true)}
@@ -88,7 +99,7 @@ const Hero = () => {
                 backgroundSize: OPTIMUS_ZOOM,
                 backgroundPosition: OPTIMUS_FOCUS,
                 backgroundRepeat: "no-repeat",
-                clipPath: `circle(${REVEAL_RADIUS}px at ${cursor.x}px ${cursor.y}px)`,
+                clipPath: `circle(${revealRadius}px at ${cursor.x}px ${cursor.y}px)`,
               }}
             />
 
@@ -97,10 +108,10 @@ const Hero = () => {
               <div
                 className="absolute rounded-full border-2 border-[#fff]/80 pointer-events-none"
                 style={{
-                  width: REVEAL_RADIUS * 2,
-                  height: REVEAL_RADIUS * 2,
-                  left: cursor.x - REVEAL_RADIUS,
-                  top: cursor.y - REVEAL_RADIUS,
+                  width: revealRadius * 2,
+                  height: revealRadius * 2,
+                  left: cursor.x - revealRadius,
+                  top: cursor.y - revealRadius,
                 }}
               />
             )}
